@@ -18,14 +18,14 @@ const Modal = ({ children }) => {
       : null;
     if (container) {
       return createPortal(
-        <div className='fixed inset-0 flex items-center justify-center z-50 cursor-pointer col-span-full'>
+        <div className='fixed inset-0 flex items-center justify-center z-50 col-span-full'>
           <div className='bg-white p-4 rounded-lg w-full max-w-md relative color-black text-black'>
             <button
-              className='absolute top-0 right-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-black'
+              className='absolute top-0 right-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-black m-2 w-8 h-8 flex items-center justify-center'
               onClick={() => router.back()}
               type='button'
             >
-              Close
+              X
             </button>
             {children}
           </div>
