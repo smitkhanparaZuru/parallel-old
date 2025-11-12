@@ -6,8 +6,10 @@ export default function VariantLayout({ children, modal }) {
       <div className='mb-4'>
         <h1 className='text-2xl font-bold'>Variant</h1>
       </div>
-      <ClientLayout>{children}</ClientLayout>
-      {modal}
+      <ClientLayout>
+        {children}
+        {modal}
+      </ClientLayout>
       <div id='modal-root'></div>
     </div>
   );
