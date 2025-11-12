@@ -10,3 +10,5 @@ export default function VariantLayout({ children, modal }) {
     </div>
   );
 }
+
+export const dynamic = 'force-dynamic';
