@@ -10,3 +10,5 @@ export default function ChangelogModalLayout({ children }) {
     </Modal>
   );
 }
+
+export const revalidate = 0;

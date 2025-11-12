@@ -29,3 +29,5 @@ export default function MainLayout({ children, modal }) {
     </div>
   );
 }
+
+export const dynamic = 'force-dynamic';

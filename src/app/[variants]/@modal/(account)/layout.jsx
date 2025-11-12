@@ -11,3 +11,5 @@ export default function AccountModalLayout({ children }) {
     </Modal>
   );
 }
+
+export const revalidate = 0;
