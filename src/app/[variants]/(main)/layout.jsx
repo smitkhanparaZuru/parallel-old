@@ -31,3 +31,5 @@ export default function MainLayout({ children, modal }) {
 }
 
 export const dynamic = 'force-dynamic';
+
+export const revalidate = 0;
