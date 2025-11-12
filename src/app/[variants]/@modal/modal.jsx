@@ -22,7 +22,10 @@ const Modal = ({ children }) => {
           <div className='bg-white p-4 rounded-lg w-full max-w-md relative color-black text-black'>
             <button
               className='absolute top-0 right-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-black m-2 w-8 h-8 flex items-center justify-center'
-              onClick={() => router.back()}
+              onClick={() => {
+                router.back();
+                router.refresh();
+              }}
               type='button'
             >
               X
