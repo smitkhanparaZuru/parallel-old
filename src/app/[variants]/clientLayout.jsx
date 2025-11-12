@@ -7,7 +7,7 @@ export default function ClientLayout({ children }) {
   const segments = useSelectedLayoutSegments();
 
   const mainKey = useMemo(
-    () => segments.filter((segment) => segment.startsWith('(')).join('/'),
+    () => segments.filter((segment) => !segment.startsWith('(')).join('/'),
     [segments]
   );
 
