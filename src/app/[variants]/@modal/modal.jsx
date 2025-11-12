@@ -23,8 +23,11 @@ const Modal = ({ children }) => {
             <button
               className='absolute top-0 right-0 p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-black m-2 w-8 h-8 flex items-center justify-center'
               onClick={() => {
-                router.back();
                 router.refresh();
+
+                setTimeout(() => {
+                  router.back();
+                }, 100);
               }}
               type='button'
             >
